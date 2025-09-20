@@ -15,3 +15,7 @@ const (
 	{{$.TypeName}}{{.Key}} {{$.TypeName}} = "{{.Event}}"
 {{- end}}
 )
+
+func (s {{.TypeName}}) String() string {
+	return string(s)
+}
