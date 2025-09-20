@@ -12,6 +12,6 @@ const (
 	{{- if .Deprecated}}
 	// Deprecated: This event is deprecated
     {{- end}}
-	{{.Key}} {{$.TypeName}} = "{{.Event}}"
+	{{$.TypeName}}{{.Key}} {{$.TypeName}} = "{{.Event}}"
 {{- end}}
 )
